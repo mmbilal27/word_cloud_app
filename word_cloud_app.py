@@ -18,7 +18,7 @@ def read_docx(file):
 def read_pdf(file):
     return extract_text(io.BytesIO(file.read()))
 
-st.title("Sadi Word Cloud di app")
+st.title("Make Your Word Cloud")
 
 uploaded_files = st.file_uploader("Choose a file", type=['txt', 'pdf', 'docx'], accept_multiple_files=True)
 
